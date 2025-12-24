@@ -1,0 +1,14 @@
+.ui-button {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px solid #1d4ed8;
+    outline-offset: 2px;
+  }
+}

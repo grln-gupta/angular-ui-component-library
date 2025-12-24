@@ -1,0 +1,24 @@
+<div
+  *ngIf="open"
+  class="ui-modal-backdrop"
+  (click)="onBackdropClick($event)"
+  role="dialog"
+  aria-modal="true"
+>
+  <div class="ui-modal" tabindex="-1">
+    <header class="ui-modal-header">
+      <h2>{{ title }}</h2>
+      <button
+        class="ui-close"
+        aria-label="Close dialog"
+        (click)="close.emit()"
+      >
+        ✕
+      </button>
+    </header>
+
+    <section class="ui-modal-body">
+      <ng-content></ng-content>
+    </section>
+  </div>
+</div>
