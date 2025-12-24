@@ -1,0 +1,31 @@
+.ui-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.ui-modal {
+  background: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  padding: 16px;
+  outline: none;
+}
+
+.ui-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ui-close {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
