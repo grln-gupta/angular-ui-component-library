@@ -3,6 +3,7 @@ import {
   Input,
   forwardRef
 } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import {
   ControlValueAccessor,
   NG_VALUE_ACCESSOR
@@ -11,6 +12,7 @@ import {
 @Component({
   selector: 'ui-input',
   standalone: true,
+  imports: [CommonModule],
   templateUrl: './input.html',
   styleUrls: ['./input.css'],
   providers: [

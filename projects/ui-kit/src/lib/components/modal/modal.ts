@@ -5,10 +5,12 @@ import {
   EventEmitter,
   HostListener
 } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'ui-modal',
   standalone: true,
+  imports: [CommonModule],
   templateUrl: './modal.html',
   styleUrls: ['./modal.css']
 })
